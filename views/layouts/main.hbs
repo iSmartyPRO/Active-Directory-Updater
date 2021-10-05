@@ -1,0 +1,22 @@
+{{> head }}
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-container">
+            <div class="uk-navbar">
+                <ul class="uk-navbar-nav">
+                <a class="uk-navbar-item uk-logo" href="#">Лого</a>
+                    <li class="uk-active"><a href="/">Home</a></li>
+                    <li class="uk-parent"><a href="/about">About</a></li>
+                    <li class="uk-parent"><a href="/partners">Partners</a></li>
+                    <li class="uk-parent"><a href="/contacts">Contacts</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="uk-container">
+        {{{ body }}}
+    </div>
+    {{> footer }}
+</body>
+</html>
