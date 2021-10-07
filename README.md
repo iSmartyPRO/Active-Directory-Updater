@@ -28,6 +28,17 @@ type: updateDescription
 ```
 в моем случае в description записывается информация о пользователе (sAMAccountName) совершивший вход на данный компьютер, с указанием времени и типа события, которое повлекло обновление данных в description.
 
+type: updateHardwareInfo
+```
+{
+    "type": "updateHardwareInfo",
+    "computername": "PC-038",
+    "hwInfo": "CPU: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz/RAM: 16Gb/Disks: Disk 0 - ATA Samsung SSD 860, Size: 250Gb/Disk 1 - ATA WDC WD10EZEX-08W, Size: 1000Gb/(Gigabyte Technology Co., Ltd., Model: H110M-D3H R2)"
+}
+```
+в моем случае в hwInfo записывается информация о аппаратной части пользователя.
+в папке public выложен скрипт PowerShell, который собирает данные с компьютера пользователя и отправляет POST запрос.
+
 ### PATCH: /api/user
 обновление данных в "User"
 
